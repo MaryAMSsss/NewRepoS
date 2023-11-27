@@ -1,0 +1,18 @@
+﻿<Window x:Class="VarikArtem.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VarikArtem"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel>
+        <Label x:Name="LoginLabel">Login:</Label>
+        <TextBox x:Name="LoginTb"></TextBox>
+        <Label x:Name="PasswordLabel">Password:</Label>
+        <PasswordBox x:Name="PasswordTb" PasswordChar="*"></PasswordBox>
+        <Button Width="100" Height="40" x:Name="SignInBtn" Click="SignInBtn_Click" Margin="5">Sign in</Button>
+        <Button Width="150" Height="20" x:Name="IfNotReg" Margin="1" BorderBrush="Transparent" Background="Transparent" Click="IfNotReg_Click">Dont have account?</Button>
+        <Label x:Name="InfoLabel"></Label>
+    </StackPanel>
+</Window>
